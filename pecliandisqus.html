@@ -62,9 +62,12 @@
 コメントの機能を外部サイトにて行う。
 PelicanではDisqusに対応しているので利用してみる。</p>
 <h1>Disqusの導入</h1>
-<p>サイトにアクセスしてアカウント作成
-pelicanでは様々なプラグインがあるようだ。</p>
-<p>[https://github.com/getpelican/pelican-plugins]</p>
+<p>サイトにアクセスしてアカウント作成</p>
+<p>pelicanconf.pyにて
+    DISQUS_SITENAME='サイト名'</p>
+<p>ここで言うサイト名はdisqusにて作成したサイトの名前
+<xxxxxx>.disqus.com
+であるためサイト名はxxxxxxを入れる。</p>
 <h1>導入方法</h1>
 <p>pelicanconf.pyファイルに以下のようにコードを追記</p>
 <div class="highlight"><pre><span class="n">PLUGIN_PATH</span> <span class="o">=</span> <span class="err">&#39;</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">pelican</span><span class="o">-</span><span class="n">plugins</span><span class="err">&#39;</span>
@@ -93,11 +96,6 @@ pelicanでは様々なプラグインがあるようだ。</p>
 									</header>
 									<ul class="dates">
 										<li>
-											<span class="date">May <strong>23</strong></span>
-											<h3><a href="angularjs.html">Angularjs ng-includeを利用する。</a></h3>
-											<p><p>angularjs ng-includeディレクティブ</p></p>
-										</li>
-										<li>
 											<span class="date">May <strong>22</strong></span>
 											<h3><a href="famousthis.html">famo.us cdnから読み込んで実行する</a></h3>
 											<p><p>famo.usをPlunkerで利用できるようにする。</p></p>
@@ -116,11 +114,6 @@ pelicanでは様々なプラグインがあるようだ。</p>
 											<span class="date">May <strong>22</strong></span>
 											<h3><a href="github.iopages.html">github.io Userページを管理する</a></h3>
 											<p><p>Userページを管理する方法</p></p>
-										</li>
-										<li>
-											<span class="date">May <strong>20</strong></span>
-											<h3><a href="famousdemopage.html">famo.us BackgroundPage切り替えデモ</a></h3>
-											<p><p>famo.usにてBackgroundPageの切り替えデモコード</p></p>
 										</li>
 										<li>
 											<span class="date">May <strong>19</strong></span>
@@ -161,13 +154,11 @@ pelicanでは様々なプラグインがあるようだ。</p>
 										<h2>Categories</h2>
 									</header>
 									<ul class="divided">
-											<li><a href="./category/angularjs.html">angularjs</a></li>
 											<li><a href="./category/develop.html">develop</a></li>
 											<li><a href="./category/pelican.html">pelican</a></li>
 											<li><a href="./category/tesuto.html">テスト</a></li>
 											<li><a href="./category/tips.html">tips</a></li>
 											<li><a href="./category/tipsfamous.html">tips,famo.us</a></li>
-											<li><a href="./category/tipsfamous-demo.html">tips,famo.us, demo</a></li>
 									</ul>
 								</section>
 							</div>

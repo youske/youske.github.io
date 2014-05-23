@@ -36,9 +36,9 @@ DATE_FORMATS = {
  'jp': '%Y-%m-%d(%a)'
 }
 
-LOCALE = {
-  'en_US', 'ja_JP'
-}
+#LOCALE = (
+#  'en_US', 'ja_JP'
+#)
 
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}

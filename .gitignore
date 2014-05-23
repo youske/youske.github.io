@@ -1,0 +1,14 @@
+## Perican output
+output/*
+*.pid
+
+## Python
+*.py[cod]
+
+## Temporary File
+.DS_Store
+.*~
+*~
+.swp
+.bak
+.tmp

@@ -1,10 +1,10 @@
-Title: master commit script
+Title: Pelican+GithubPagesの運用について
 Date: 2014-05-22 11:00
 Category: tips
-Tags: github pelican
-Slug: github pelican
+Tags: github,pelican,運用
+Slug: pelicangithub
 Author: youske
-Summary: mastet commit script
+Summary: Peclian+GithubPagesにてUserpe-
 
 # 概要
 githubのユーザページはmasterブランチに置かれているファイル(htmlその他)が

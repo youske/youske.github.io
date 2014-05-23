@@ -10,6 +10,8 @@ TIMEZONE = 'Asia/Tokyo'
 
 DEFAULT_LANG = u'jp'
 
+THEME='/home/action/workspace/pelican-themes/html5-dopetrope'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None

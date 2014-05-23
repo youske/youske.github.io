@@ -1,17 +1,18 @@
-Title: testgin 3
-Date: 2014-05-21 12:00
-Category: test-3
-Tags: test
-Slug: 3rd-post
+Title: Angularjs ng-includeを利用する。
+Date: 2014-05-23 10:00
+Category: angularjs
+Tags: angularjs,tips
+Slug: angularjs
 Author: youske
-Summary: testing
+Summary: angularjs ng-includeディレクティブ
 
-hellow
+# 概要
+何かのきっかけで一部のページごとまるごと切り替えたい場合などがあります。
+例えばタブを押されるとタブの中が切り替わるページなど
 
-# test1
+そこでng-includeディレクティブを利用して実装してみる。
 
-## test2
+plunkerリンク
 
-### test3
-ok!?
-
+あまり説明としては無いです、
+このように簡単にできるのは非常に便利です。

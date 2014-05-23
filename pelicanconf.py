@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'youske'
-SITENAME = u'peblog'
+SITENAME = u'development blog'
 SITEURL = u'https://youske.github.io'
 
 TIMEZONE = 'Asia/Tokyo'
@@ -17,9 +17,8 @@ TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('github', 'http://github.com/youske/'),
+          ('github mypage', 'http://github.com/youske/'),
+          ('Plunker mypage', 'http://plnkr.co/users/youske'),
           ('You can modify those links in your config file', '#'),
 )
 

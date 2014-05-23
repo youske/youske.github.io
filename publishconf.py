@@ -23,3 +23,8 @@ DELETE_OUTPUT_DIRECTORY = True
 GITHUB_URL = "https;//github.com/youske"
 DISQUS_SITENAME = "youskegithubio"
 GOOGLE_ANALYTICS = "UA-51245385-1"
+
+# tag cloud
+TAG_CLOUD_STEPS = 4
+
+

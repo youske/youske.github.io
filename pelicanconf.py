@@ -4,9 +4,24 @@ from __future__ import unicode_literals
 
 AUTHOR = u'youske'
 SITENAME = u'development blog'
-SITEURL = u'https://youske.github.io'
+SITEURL = u''
 TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = u'jp'
+
+DATE_FORMATS = {
+ 'en': '%a, %d %b %Y',
+ 'jp': '%Y-%m-%d(%a)'
+}
+
+# static paths will be copied without parsing their contents
+STATIC_PATHS = [
+  'images',
+  'extra',
+]
+
+EXTRA_PATH_METADATA = {
+  'extra/robots.txt': {'path': 'robots.txt' }
+}
 
 THEME='/home/action/workspace/pelican-themes/pelican-bootstrap3'
 
@@ -31,11 +46,6 @@ DEFAULT_PAGINATION = 20
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-DATE_FORMATS = {
- 'en': '%a, %d %b %Y',
- 'jp': '%Y-%m-%d(%a)'
-}
-
 #LOCALE = (
 #  'en_US', 'ja_JP'
 #)
@@ -43,22 +53,12 @@ DATE_FORMATS = {
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
 
-# static paths will be copied without parsing their contents
-STATIC_PATHS = [
-  'pictures',
-  'extra/robots.txt',
-]
-EXTRA_PATH_METADATA = {
-  'extra/robots.txt': {'path': 'robots.txt' }
-}
 
 
 # plugin settings
 PLUGIN_PATH = '/home/action/workspace/pelican-plugins/'
 PLUGINS = [
-'assets','interlinks',  'googleplus_comments', 'post_stats', 'tipue_search','share_post', 'related_posts', 'sitemap','pelican_vimeo','pelican_youtube',
-#'html_rst_directive' 
-# 'disqus_static',
+'assets','interlinks',  'googleplus_comments', 'post_stats', 'tipue_search','share_post', 'related_posts', 'sitemap','pelican_vimeo','pelican_youtube','gallery', 'neighbors', 
 #'html_entity', #'read_more_link',#'thumbnailer',#'subcategory',
 ]
 
@@ -75,3 +75,5 @@ SITEMAP = {
     'pages': 'monthly',
   }
 }
+
+

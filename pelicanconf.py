@@ -8,7 +8,7 @@ SITEURL = u'https://youske.github.io'
 TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = u'jp'
 
-THEME='/home/action/workspace/pelican-themes/html5-dopetrope'
+THEME='/home/action/workspace/pelican-themes/pelican-bootstrap3'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -54,6 +54,24 @@ EXTRA_PATH_METADATA = {
 
 
 # plugin settings
-#PLUGIN_PATH = '/path/to/pelican-plugins'
-#PLUGINS = ['plugin1', 'plugin2', ]
+PLUGIN_PATH = '/home/action/workspace/pelican-plugins/'
+PLUGINS = [
+'assets','interlinks',  'googleplus_comments', 'post_stats', 'tipue_search','share_post', 'related_posts', 'sitemap','pelican_vimeo','pelican_youtube',
+#'html_rst_directive' 
+# 'disqus_static',
+#'html_entity', #'read_more_link',#'thumbnailer',#'subcategory',
+]
 
+SITEMAP = {
+  'format': 'xml',
+  'priorities': {
+    'articles': 0.5,
+    'indexes': 0.5,
+    'pages': 0.5,
+  },
+  'changefreqs': {
+    'articles': 'monthly',
+    'indexes': 'daily',
+    'pages': 'monthly',
+  }
+}

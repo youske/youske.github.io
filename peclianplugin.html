@@ -57,13 +57,14 @@
 							<!-- Content -->
 								<article class="box is-post">
 									<a href="#" class="image image-full"><img src=""/></a>
-									<h1>概要</h1>
-<p>何かのきっかけで一部のページごとまるごと切り替えたい場合などがあります。
-例えばタブを押されるとタブの中が切り替わるページなど</p>
-<p>そこでng-includeディレクティブを利用して実装してみる。</p>
-<p>[http://embed.plnkr.co/lOO2Mm4OzVZXeBjB4ptd/preview]</p>
-<p>あまり説明としては無いです、
-このように簡単にできるのは非常に便利です。</p>
+									<h1>pelican プラグイン</h1>
+<p>pelicanでは様々なプラグインがあるようだ。</p>
+<p>[https://github.com/getpelican/pelican-plugins]</p>
+<h1>導入方法</h1>
+<p>pelicanconf.pyファイルに以下のようにコードを追記</p>
+<div class="highlight"><pre><span class="n">PLUGIN_PATH</span> <span class="o">=</span> <span class="err">&#39;</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">pelican</span><span class="o">-</span><span class="n">plugins</span><span class="err">&#39;</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="err">&#39;</span><span class="n">plugin1</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">plugin2</span><span class="err">&#39;</span><span class="p">,</span> <span class="p">]</span>
+</pre></div>
 								</article>
 						</div>
 					</div>

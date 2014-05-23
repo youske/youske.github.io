@@ -58,12 +58,41 @@
 								<article class="box is-post">
 									<a href="#" class="image image-full"><img src=""/></a>
 									<h1>概要</h1>
-<p>何かのきっかけで一部のページごとまるごと切り替えたい場合などがあります。
-例えばタブを押されるとタブの中が切り替わるページなど</p>
-<p>そこでng-includeディレクティブを利用して実装してみる。</p>
-<p>[http://embed.plnkr.co/lOO2Mm4OzVZXeBjB4ptd/preview]</p>
-<p>あまり説明としては無いです、
-このように簡単にできるのは非常に便利です。</p>
+<p>githubのユーザページはmasterブランチに置かれているファイルが(htmlその他)表示の対象となっている。
+Projectページではgh-pagesというブランチが表示の対象。</p>
+<p>User ページにおいてこの仕様で問題なのは、直接masterブランチにhtmlなどのファイルを配置する場合
+特に問題ないが、静的サイトジェネレータを使って出力した結果をページにしたい場合
+ソースファイルの置き場所とジェネレータによって生成されたファイルが混在する。
+状況として、ソースと生成物が異なるのはいささか衛生上良くないので分けて運用する。</p>
+<p>リポジトリの配置が問題であるための解決策として次のことを考えた。
+1. Userページのリポジトリにはhtmlファイルを配置するが、ソースは別リポジトリ
+2. 同一リポジトリ内に別々に管理されるブランチを設定</p>
+<p>１の方法だとかなり面倒であるため、２の方法で解決した。</p>
+<ol>
+<li>親無しブランチsourceを作成 静的サイトジェネレータのソースを配置</li>
+<li>masterブランチ 静的サイトジェネレータが生成するoutputの内容を配置</li>
+</ol>
+<p>つまり Userページリポジトリには
+master
+source
+この２つのブランチが存在し、それぞれ異なるファイルを管理するように設定</p>
+<h1>運用に関するフロー</h1>
+<ol>
+<li>sourceブランチにチェックアウト</li>
+<li>同contentsフォルダにてMarkdown形式の投稿を書く</li>
+<li>sourceブランチのルートに戻り make html</li>
+<li>output の確認に make devserver としてローカル確認</li>
+<li>masterブランチにチェックアウト　outputは除外設定としている。</li>
+<li>outputフォルダは存在するので　cp -r output/* ./</li>
+<li>git add -all ; git commit -m "commit message" にて登録</li>
+<li>
+<p>git push origin master</p>
+</li>
+<li>
+<p>source に再びチェックインし、変更分をcomiit push</p>
+</li>
+</ol>
+<p>などなど</p>
 								</article>
 						</div>
 					</div>

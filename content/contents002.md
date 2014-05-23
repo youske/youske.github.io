@@ -1,6 +1,6 @@
 Title: testgin 3
 Date: 2014-05-21 12:00
-Category: test
+Category: test-3
 Tags: test
 Slug: 3rd-post
 Author: youske

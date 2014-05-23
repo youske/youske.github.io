@@ -21,6 +21,9 @@ developtment.py 8080
 $> make github
 
 
+## deploy 
+
+master_deploy.sh
 
 
 

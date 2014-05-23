@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>firebaseを利用してデータの読み書き - development blog</title>
+    <title>famo.usの仕組み関して - development blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
 
     <!-- Open Graph tags -->
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="firebaseを利用してデータの読み書き"/>
-            <meta property="og:url" content="../firebasetest.html"/>
-            <meta property="og:description" content="firebaseを利用してみる"/>
+            <meta property="og:title" content="famo.usの仕組み関して"/>
+            <meta property="og:url" content="../famousdocument.html"/>
+            <meta property="og:description" content="famo.usの仕組み関して"/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css"/>
@@ -52,10 +52,10 @@ development blog            </a>
                         <li >
                             <a href="../category/tesuto.html">テスト</a>
                         </li>
-                        <li class="active">
+                        <li >
                             <a href="../category/tips.html">Tips</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="../category/tips-famous.html">Tips, famo.us</a>
                         </li>
             </ul>
@@ -75,10 +75,10 @@ development blog            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../firebasetest.html"
+                    <a href="../famousdocument.html"
                        rel="bookmark"
-                       title="Permalink to firebaseを利用してデータの読み書き">
-                        firebaseを利用してデータの読み書き
+                       title="Permalink to famo.usの仕組み関して">
+                        famo.usの仕組み関して
                     </a>
                 </h1>
             </header>
@@ -88,25 +88,32 @@ development blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-05-19T09:00:00"> 2014-05-19(Mon)</time>
+        <i class="fa fa-calendar"></i><time datetime="2014-05-26T11:00:00"> 2014-05-26(Mon)</time>
     </span>
 
 
 
 <span class="label label-default">Tags</span>
-	<a href="../tag/firebase.html">firebase</a>
-        /
-	<a href="../tag/angularjs.html">angularjs</a>
+	<a href="../tag/famous.html">famo.us</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h1>概要</h1>
-<p>firebaseなるリアルタイムな読み書きができるサービスがあるようなのでテストして見る。
-ここでしたいことは
-1. firebaseのサービスを利用してデータの読み込み、書き込みを実施
-2. firebaseでの認証システムを利用して、ユーザごとにデータを区別する。
-3. ユーザ内に公開データと非公開データを設定し、ページに同時アクセスしている人に対してデータを提供数r。</p>
-<h1>導入設定</h1>
+<p>famo.usはこれまでのDOM操作
+単なるHTML5ウェブアプリで高速に描画するライブラリだと思っていましたが、次世代のフレームワークであると言えます。
+またこれまでDOMのアクセス、操作編集と言ったjavascriptの色見から
+document,view
+平たく言えばかなりゲームシステムに近い考え方になります。</p>
+<h1>読み取り</h1>
+<p>サンプルなどを読み取って行くとFamousの中核をなすEngineに対してView,Surfaceなどを接続し、
+Modifierなる変換をサーフェイス、viewに対して変換を行うことでシングルページアプリを構成します。</p>
+<p>これは簡単なゲームシステムに近い作り方になっていて、
+描画用のオブジェクトとしてSurface
+Surfaceを貼り付ける台紙View
+Surface、Viewへの時間、空間の変換を設定しスタートさせます。</p>
+<p>ライブラリ内には
+Collision,Physicsなどもあることを想像するにゲームライブラリ（確実にゲームは作れますね。）
+をデザインの元としているような感じです。</p>
             </div>
             <!-- /.entry-content -->
     <hr />
@@ -116,8 +123,8 @@ development blog            </a>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'youskegithubio'; // required: replace example with your forum shortname
-            var disqus_identifier = 'firebasetest';
-            var disqus_url = '../firebasetest.html';
+            var disqus_identifier = 'famousdocument';
+            var disqus_url = '../famousdocument.html';
             var disqus_config = function () {
                 this.language = "jp";
             };

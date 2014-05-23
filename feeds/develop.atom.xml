@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>development blog</title><link href="http://youske.github.io/" rel="alternate"></link><link href="http://youske.github.io/feeds/develop.atom.xml" rel="self"></link><id>http://youske.github.io/</id><updated>2014-05-22T11:00:00+09:00</updated><entry><title>github.io Userページを管理する</title><link href="http://youske.github.io/github.iopages.html" rel="alternate"></link><updated>2014-05-22T11:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-22:github.iopages.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;githubのユーザページはmasterブランチに置かれているファイルが(htmlその他)表示の対象となっている。
+Projectページではgh-pagesというブランチが表示の対象。&lt;/p&gt;
+&lt;p&gt;User ページにおいてこの仕様で問題なのは、直接masterブランチにhtmlなどのファイルを配置する場合
+特に問題ないが、静的サイトジェネレータを使って出力した結果をページにしたい場合
+ソースファイルの置き場所とジェネレータによって生成されたファイルが混在する。
+状況として、ソースと生成物が異なるのはいささか衛生上良くないので分けて運用する。&lt;/p&gt;
+&lt;p&gt;リポジトリの配置が問題であるための解決策として次のことを考えた。
+1. Userページのリポジトリにはhtmlファイルを配置するが、ソースは別リポジトリ
+2. 同一リポジトリ内に別々に管理されるブランチを設定&lt;/p&gt;
+&lt;p&gt;１の方法だとかなり面倒であるため、２の方法で解決した。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;親無しブランチsourceを作成 静的サイトジェネレータのソースを配置&lt;/li&gt;
+&lt;li&gt;masterブランチ 静的サイトジェネレータが生成するoutputの内容を配置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;つまり Userページリポジトリには
+master
+source
+この２つのブランチが存在し、それぞれ異なるファイルを管理するように設定&lt;/p&gt;
+&lt;h1&gt;運用に関するフロー&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;sourceブランチにチェックアウト&lt;/li&gt;
+&lt;li&gt;同contentsフォルダにてMarkdown形式の投稿を書く&lt;/li&gt;
+&lt;li&gt;sourceブランチのルートに戻り make html&lt;/li&gt;
+&lt;li&gt;output の確認に make devserver としてローカル確認&lt;/li&gt;
+&lt;li&gt;masterブランチにチェックアウト　outputは除外設定としている。&lt;/li&gt;
+&lt;li&gt;outputフォルダは存在するので　cp -r output/* ./&lt;/li&gt;
+&lt;li&gt;git add -all ; git commit -m "commit message" にて登録&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;git push origin master&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;source に再びチェックインし、変更分をcomiit push&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;などなど&lt;/p&gt;</summary><category term="github"></category><category term="pelican"></category></entry></feed>

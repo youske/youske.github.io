@@ -4,175 +4,175 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://youske.github.io/index.html</loc>
-<lastmod>2014-05-23T10:29:02-00:00</lastmod>
+<loc>http://youske.github.io/index.html</loc>
+<lastmod>2014-05-23T11:07:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/archives.html</loc>
-<lastmod>2014-05-23T10:29:02-00:00</lastmod>
+<loc>http://youske.github.io/archives.html</loc>
+<lastmod>2014-05-23T11:07:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/tags.html</loc>
-<lastmod>2014-05-23T10:29:02-00:00</lastmod>
+<loc>http://youske.github.io/tags.html</loc>
+<lastmod>2014-05-23T11:07:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/categories.html</loc>
-<lastmod>2014-05-23T10:29:02-00:00</lastmod>
+<loc>http://youske.github.io/categories.html</loc>
+<lastmod>2014-05-23T11:07:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/famousthis.html</loc>
+<loc>http://youske.github.io/famousthis.html</loc>
 <lastmod>2014-05-22T21:30:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/pelicangithub.html</loc>
+<loc>http://youske.github.io/pelicangithub.html</loc>
 <lastmod>2014-05-22T19:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/pelicantheme.html</loc>
+<loc>http://youske.github.io/pelicantheme.html</loc>
 <lastmod>2014-05-22T17:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/github.iopages.html</loc>
+<loc>http://youske.github.io/github.iopages.html</loc>
 <lastmod>2014-05-22T11:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/pecliandisqus.html</loc>
+<loc>http://youske.github.io/pecliandisqus.html</loc>
 <lastmod>2014-05-19T18:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/peclianplugin.html</loc>
+<loc>http://youske.github.io/peclianplugin.html</loc>
 <lastmod>2014-05-19T18:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/fistpost.html</loc>
+<loc>http://youske.github.io/fistpost.html</loc>
 <lastmod>2014-05-19T09:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/category/develop.html</loc>
+<loc>http://youske.github.io/category/develop.html</loc>
 <lastmod>2014-05-22T11:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/category/pelican.html</loc>
+<loc>http://youske.github.io/category/pelican.html</loc>
 <lastmod>2014-05-22T17:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/category/tesuto.html</loc>
+<loc>http://youske.github.io/category/tesuto.html</loc>
 <lastmod>2014-05-19T09:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/category/tips.html</loc>
+<loc>http://youske.github.io/category/tips.html</loc>
 <lastmod>2014-05-22T19:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/category/tipsfamous.html</loc>
+<loc>http://youske.github.io/category/tips-famous.html</loc>
 <lastmod>2014-05-22T21:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/tag/tesuto.html</loc>
+<loc>http://youske.github.io/tag/tesuto.html</loc>
 <lastmod>2014-05-19T09:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/tag/pelican.html</loc>
+<loc>http://youske.github.io/tag/pelican.html</loc>
 <lastmod>2014-05-22T19:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/tag/github.html</loc>
+<loc>http://youske.github.io/tag/github.html</loc>
 <lastmod>2014-05-22T19:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/tag/plugin.html</loc>
+<loc>http://youske.github.io/tag/plugin.html</loc>
 <lastmod>2014-05-19T18:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/tag/famous.html</loc>
+<loc>http://youske.github.io/tag/famous.html</loc>
 <lastmod>2014-05-22T21:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/tag/theme.html</loc>
+<loc>http://youske.github.io/tag/theme.html</loc>
 <lastmod>2014-05-22T17:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/tag/yun-yong.html</loc>
+<loc>http://youske.github.io/tag/yun-yong.html</loc>
 <lastmod>2014-05-22T19:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/tag/disqus.html</loc>
+<loc>http://youske.github.io/tag/disqus.html</loc>
 <lastmod>2014-05-19T18:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://youske.github.io/author/youske.html</loc>
+<loc>http://youske.github.io/author/youske.html</loc>
 <lastmod>2014-05-22T21:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>

@@ -1,8 +1,8 @@
 Title: github.io Userページを管理する
 Date: 2014-05-22 11:00
 Category: develop
-Tags: github pelican
-Slug: github pelican
+Tags: github pelicanix
+Slug: github pelicanxxx
 Author: youske
 Summary: Userページを管理する方法
 

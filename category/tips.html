@@ -22,7 +22,46 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://youske.github.io/peclian github.html">Pelican + githubをやってみた</a></h1>
+                    <h1 class="entry-title"><a href="https://youske.github.io/github pelican.html">master commit script</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2014-05-22T11:00:00">
+                Thu 22 May 2014
+        </abbr>
+
+        <address class="vcard author">
+                By <a class="url fn" href="https://youske.github.io/author/youske.html">youske</a>
+        </address>
+<p>In <a href="https://youske.github.io/category/tips.html">tips</a>. </p>
+<p>tags: <a href="https://youske.github.io/tag/github-pelican.html">github pelican</a></p>
+</footer><!-- /.post-info --><h1>概要</h1>
+<p>githubのユーザページはmasterブランチに置かれているファイル(htmlその他)が
+表示の対象となっている。
+Projectページではgh-pagesというブランチが表示の対象。</p>
+<p>この仕様で問題なのは、直接masterブランチにhtmlなどのファイルを配置する場合
+特に問題ないが、静的サイトジェネレータを使って出力した結果をページにしたい場合
+ソースファイルの置き場所がマスターブランチとなってしまう。</p>
+<p>この問題について次のような形で解決した。</p>
+<ol>
+<li>親無しブランチ sourceを作成 静的サイトジェネレータのソースを配置</li>
+<li>masterブランチ 静的サイトジェネレータが生成するoutputの内容を配置</li>
+</ol>
+<p>なお静的サイトジェネレータはPelicanを使用</p>
+<h2>運用に関するフロー</h2>
+<p>簡単フローとして</p>
+<p>sourceブランチ</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://youske.github.io/peclian github.html" rel="bookmark"
+                           title="Permalink to Pelican + githubをやってみた">Pelican + githubをやってみた</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2014-05-21T12:00:00">
                 Wed 21 May 2014
@@ -33,13 +72,14 @@
         </address>
 <p>In <a href="https://youske.github.io/category/tips.html">tips</a>. </p>
 <p>tags: <a href="https://youske.github.io/tag/pelican-github.html">pelican github</a></p>
-</footer><!-- /.post-info --><p>まず行ったこと</p>
-<p>環境の整備</p>                </article>
+</footer><!-- /.post-info -->                <p>Pelican + github-pagesにて運用してみる。</p>
+                <a class="readmore" href="https://youske.github.io/peclian github.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+            </ol><!-- /#posts-list -->
 <p class="paginator">
     Page 1 / 1
 </p>
-            </aside><!-- /#featured -->
-            </ol><!-- /#posts-list -->
             </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">

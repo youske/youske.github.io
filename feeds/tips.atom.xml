@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>peblog</title><link href="http://youske.github.io/" rel="alternate"></link><link href="http://youske.github.io/feeds/tips.atom.xml" rel="self"></link><id>http://youske.github.io/</id><updated>2014-05-21T12:00:00+09:00</updated><entry><title>Pelican + githubをやってみた</title><link href="http://youske.github.io/peclian%20github.html" rel="alternate"></link><updated>2014-05-21T12:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-21:peclian github.html</id><summary type="html">&lt;p&gt;まず行ったこと&lt;/p&gt;
+&lt;p&gt;環境の整備&lt;/p&gt;</summary><category term="pelican github"></category></entry></feed>

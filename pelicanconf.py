@@ -75,3 +75,12 @@ SITEMAP = {
     'pages': 'monthly',
   }
 }
+
+USE_FOLDER_AS_CATEGORY = True
+DEFAULT_CATEGORY = ''
+
+
+
+
+
+

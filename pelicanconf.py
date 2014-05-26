@@ -75,5 +75,3 @@ SITEMAP = {
     'pages': 'monthly',
   }
 }
-
-

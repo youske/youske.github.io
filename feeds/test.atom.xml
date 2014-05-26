@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>peblog</title><link href="http://youske.github.io/" rel="alternate"></link><link href="http://youske.github.io/feeds/test.atom.xml" rel="self"></link><id>http://youske.github.io/</id><updated>2014-05-21T12:00:00+09:00</updated><entry><title>testgin 3</title><link href="http://youske.github.io/3rd-post.html" rel="alternate"></link><updated>2014-05-21T12:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-21:3rd-post.html</id><summary type="html">&lt;p&gt;hellow&lt;/p&gt;
-&lt;h1&gt;test1&lt;/h1&gt;
-&lt;h2&gt;test2&lt;/h2&gt;
-&lt;h3&gt;test3&lt;/h3&gt;
-&lt;p&gt;ok!?&lt;/p&gt;</summary><category term="test"></category></entry><entry><title>testt</title><link href="http://youske.github.io/test-post.html" rel="alternate"></link><updated>2014-05-21T11:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-21:test-post.html</id><summary type="html">&lt;p&gt;hogeh&lt;/p&gt;
-&lt;h1&gt;foo&lt;/h1&gt;
-&lt;h2&gt;foo2&lt;/h2&gt;
-&lt;h3&gt;foo3&lt;/h3&gt;
-&lt;p&gt;ok!&lt;/p&gt;</summary><category term="test"></category></entry><entry><title>first</title><link href="http://youske.github.io/first-post.html" rel="alternate"></link><updated>2014-05-21T10:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-21:first-post.html</id><summary type="html">&lt;p&gt;hellow&lt;/p&gt;
-&lt;h1&gt;test1&lt;/h1&gt;
-&lt;h2&gt;test2&lt;/h2&gt;
-&lt;h3&gt;test3&lt;/h3&gt;
-&lt;p&gt;ok&lt;/p&gt;</summary><category term="test"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>development blog</title><link href="http://youske.github.io/" rel="alternate"></link><link href="http://youske.github.io/feeds/test.atom.xml" rel="self"></link><id>http://youske.github.io/</id><updated>2014-05-19T09:00:00+09:00</updated><entry><title>テスト投稿</title><link href="http://youske.github.io/fistpost.html" rel="alternate"></link><updated>2014-05-19T09:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-19:fistpost.html</id><summary type="html">&lt;p&gt;Markdownのテスト&lt;/p&gt;
+&lt;h1&gt;見出し1&lt;/h1&gt;
+&lt;h2&gt;見出し2&lt;/h2&gt;
+&lt;h3&gt;見出し3&lt;/h3&gt;
+&lt;h2&gt;引用&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用してます。
+さらに引用してます。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用のネスト&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更に深く&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;リスト&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;赤&lt;/li&gt;
+&lt;li&gt;青&lt;/li&gt;
+&lt;li&gt;黄色&lt;/li&gt;
+&lt;li&gt;緑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;数字リスト&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;a&lt;/li&gt;
+&lt;li&gt;b&lt;/li&gt;
+&lt;li&gt;c&lt;/li&gt;
+&lt;li&gt;d&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;線&lt;/h2&gt;
+&lt;hr/&gt;
+&lt;hr/&gt;
+&lt;hr/&gt;
+&lt;hr/&gt;
+&lt;h2&gt;code&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;test&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="test"></category></entry></feed>

@@ -50,13 +50,22 @@ development blog            </a>
                             <a href="./category/pelican.html">Pelican</a>
                         </li>
                         <li >
+                            <a href="./category/pelican-tips.html">Pelican, tips</a>
+                        </li>
+                        <li >
                             <a href="./category/review.html">Review</a>
                         </li>
                         <li >
-                            <a href="./category/tesuto.html">テスト</a>
+                            <a href="./category/test.html">Test</a>
                         </li>
                         <li >
                             <a href="./category/tips.html">Tips</a>
+                        </li>
+                        <li >
+                            <a href="./category/tips-aide.html">Tips, aide</a>
+                        </li>
+                        <li >
+                            <a href="./category/tips-esenthel.html">Tips, esenthel</a>
                         </li>
                         <li >
                             <a href="./category/tips-famous.html">Tips, famo.us</a>
@@ -104,26 +113,27 @@ development blog            </a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h1>概要</h1>
-<p>既定のテーマでも個人的には問題は無いが、より見やすそうなテーマに変更</p>
-<h1>設定方法</h1>
+<p>既定のテーマでも個人的には問題はないが、より見やすそうなテーマに変更</p>
+<h2>pelican-themesの取得</h2>
+<p>そこでどこにpelicanのテーマがあるのかと言うと
+https://github.com/getpelican/pelican-themes</p>
+<p>適当な位置にディレクトリを変更し
+    git clone --recursive https://github.com/getpelican/pelican-themes 
+    - 適当なディレクトリにリポジトリを作る。(pelicanconf.py THEME=に設定できるディレクトリ)</p>
+<h2>設定方法</h2>
 <p>pelicanconf.pyに設定項目</p>
-<div class="highlight"><pre><span class="n">THEME</span><span class="o">=</span><span class="err">'テーマが配置されているローカルディレクトリ'</span>
+<div class="highlight"><pre><span class="n">THEME</span><span class="o">=</span><span class="err">'テーマが配置されているパス'</span>
 </pre></div>
 <p>として記述makeされるたびにここで指定されているテーマを利用してページが作成される。</p>
-<h1>pelican-themesの取得</h1>
-<p>そこでどこにテーマがあるのかと言うと
-https://github.com/getpelican/pelican-themes</p>
-<p>git clone --recursive https://github.com/getpelican/pelican-themes 
-- 適当なディレクトリにリポジトリを作る。(pelicanconf.py THEME=に設定できるディレクトリ)</p>
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
     <ul>
+        <li><a href="./pecliandisqus.html">Disqusアカウント、コメントを利用する Pelicanのコメント機能</a></li>
         <li><a href="./github.iopages.html">github.io Userページを管理する</a></li>
         <li><a href="./pelicangithub.html">Pelican+GithubPagesの運用について</a></li>
         <li><a href="./peclianplugin.html">Pelican Plugin</a></li>
-        <li><a href="./pecliandisqus.html">Disqusアカウント、コメントを利用する Pelicanのコメント機能</a></li>
     </ul>
 </section>
     <hr />
@@ -188,8 +198,13 @@ https://github.com/getpelican/pelican-themes</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/webservice.html">
-                                webservice
+                            <a href="./tag/famous.html">
+                                famo.us
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/disqus.html">
+                                Disqus
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -198,18 +213,48 @@ https://github.com/getpelican/pelican-themes</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/plugin.html">
-                                plugin
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
                             <a href="./tag/codeanywhere.html">
                                 codeanywhere
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/tesuto.html">
-                                テスト
+                            <a href="./tag/editor.html">
+                                editor
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/esenthel.html">
+                                esenthel
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/test.html">
+                                test
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/aide.html">
+                                AIDE
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/webservice.html">
+                                webservice
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/plugin.html">
+                                plugin
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/android.html">
+                                Android
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/tips.html">
+                                tips
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -218,13 +263,8 @@ https://github.com/getpelican/pelican-themes</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/famous.html">
-                                famo.us
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="./tag/disqus.html">
-                                Disqus
+                            <a href="./tag/develop.html">
+                                develop
                             </a>
                         </li>
                     </ul>

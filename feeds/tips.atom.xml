@@ -14,22 +14,7 @@ Projectページではgh-pagesというブランチが表示の対象。&lt;/p&g
 &lt;p&gt;なお静的サイトジェネレータはPelicanを使用&lt;/p&gt;
 &lt;h2&gt;運用に関するフロー&lt;/h2&gt;
 &lt;p&gt;簡単フローとして&lt;/p&gt;
-&lt;p&gt;sourceブランチ&lt;/p&gt;</summary><category term="github"></category><category term="pelican"></category><category term="運用"></category></entry><entry><title>Disqusアカウント、コメントを利用する Pelicanのコメント機能</title><link href="http://youske.github.io/pecliandisqus.html" rel="alternate"></link><updated>2014-05-19T18:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-19:pecliandisqus.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
-&lt;p&gt;Pelican + GitHubPagesなので動的ページでも無いし、DB接続もないので
-コメントの機能を外部サイトにて行う。
-PelicanではDisqusに対応しているので利用してみる。&lt;/p&gt;
-&lt;h1&gt;Disqusの導入&lt;/h1&gt;
-&lt;p&gt;サイトにアクセスしてアカウント作成&lt;/p&gt;
-&lt;p&gt;pelicanconf.pyにて
-    DISQUS_SITENAME='サイト名'&lt;/p&gt;
-&lt;p&gt;ここで言うサイト名はdisqusにて作成したサイトの名前
-&lt;xxxxxx&gt;.disqus.com
-であるためサイト名はxxxxxxを入れる。&lt;/xxxxxx&gt;&lt;/p&gt;
-&lt;h1&gt;導入方法&lt;/h1&gt;
-&lt;p&gt;pelicanconf.pyファイルに以下のようにコードを追記&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;PLUGIN_PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;
-&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;plugin1&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;plugin2&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="Disqus"></category></entry><entry><title>Pelican Plugin</title><link href="http://youske.github.io/peclianplugin.html" rel="alternate"></link><updated>2014-05-19T18:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-19:peclianplugin.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;sourceブランチ&lt;/p&gt;</summary><category term="github"></category><category term="pelican"></category><category term="運用"></category></entry><entry><title>Pelican Plugin</title><link href="http://youske.github.io/peclianplugin.html" rel="alternate"></link><updated>2014-05-19T18:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-19:peclianplugin.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;pelicanでは様々なプラグインがあるようだ。
 これらを利用することでpelicanにはなかった機能を保管することができる。&lt;/p&gt;
 &lt;p&gt;[https://github.com/getpelican/pelican-plugins]&lt;/p&gt;

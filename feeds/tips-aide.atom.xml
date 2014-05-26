@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>development blog</title><link href="http://youske.github.io/" rel="alternate"></link><link href="http://youske.github.io/feeds/tips-aide.atom.xml" rel="self"></link><id>http://youske.github.io/</id><updated>2014-05-02T10:00:00+09:00</updated><entry><title>AIDEを用いたAndroidアプリケーションの実装</title><link href="http://youske.github.io/aidedevelop.html" rel="alternate"></link><updated>2014-05-02T10:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-02:aidedevelop.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;タイトルとしてややこしいですが、Android端末にてAndroidアプリを作ってみるのが目的&lt;/p&gt;
+&lt;p&gt;なぜそんなことをしたいのか？
+1. ちょっとした変更であればすぐにコード修正、アプリでテスト
+2. AndroidSDKをマシンにWindows,OSXにインストールするのがめんどくさいから
+3. 実行テストが結局のところAndroidマシンだから&lt;/p&gt;
+&lt;p&gt;この３つを考えると結局AndoridアプリでAPKを作った方がいいんじゃないか
+という思惑です。&lt;/p&gt;
+&lt;p&gt;幸いAIDEというアプリがあったのでインストール
+gitリポジトリにアクセスまでできるので、なかなか至れりつくセリ、&lt;/p&gt;
+&lt;p&gt;一番のネックであるコードを記載する環境がgitリポジトリにサポートで改善されていますね。
+かなり利便性があります。&lt;/p&gt;
+&lt;p&gt;学習方法として
+コンパイルマシン（AIDE搭載の端末） 調査用、コード変更用マシン
+完全に両者をAndroidマシンでやっても問題は無さそうですね。&lt;/p&gt;</summary><category term="AIDE"></category><category term="Android"></category><category term="develop"></category></entry></feed>

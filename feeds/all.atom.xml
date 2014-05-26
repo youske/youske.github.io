@@ -28,7 +28,15 @@ HTML,javascriptのコードであればプレビューに使える。&lt;/p&gt;
 シンクライアント（厳密にはシンクライアントではないがchromeosの乗ったchromebook)には完全に用途が合致している。
 むしろこの分野ではそれしか選択肢が無いとも言える。&lt;/p&gt;
 &lt;p&gt;どちらかと言えばこちらよりnitros.IOのほうが利便性が高い。
-nitrous.IOはサーバⅠ台をまるごと利用できるのでアドバンテージは高い（git, 他のソフトウェアもインストールできる。）&lt;/p&gt;</summary><category term="codeanywhere"></category><category term="webservice"></category></entry><entry><title>famo.us cdnから読み込んで実行する</title><link href="http://youske.github.io/famousthis.html" rel="alternate"></link><updated>2014-05-22T21:30:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-22:famousthis.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+nitrous.IOはサーバⅠ台をまるごと利用できるのでアドバンテージは高い（git, 他のソフトウェアもインストールできる。）&lt;/p&gt;</summary><category term="codeanywhere"></category><category term="webservice"></category></entry><entry><title>esenthelエディタ</title><link href="http://youske.github.io/esenthelmemo3.html" rel="alternate"></link><updated>2014-05-22T21:30:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-22:esenthelmemo3.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;famo.us famo.usのcdnを利用したPlunkerで利用できるようにする。&lt;/p&gt;
+&lt;h1&gt;設定&lt;/h1&gt;
+&lt;p&gt;&lt;head&gt;要素内にて以下のコードを記述
+require.jsを利用することでjsファイルが読み込まれると同時に所定の初期化処理が実行される。
+どうやらfamo.usではrequire.jsでの読み込み方法を利用している。&lt;/head&gt;&lt;/p&gt;
+&lt;h1&gt;plunkerでの実行&lt;/h1&gt;
+&lt;p&gt;starter-kitに付属のboilerplateのコードがほとんどそのまま利用できるが
+Plukerではフォルダ管理ができないようなので、すべてrootパスに切り替える程度ですむ。&lt;/p&gt;</summary><category term="esenthel"></category><category term="editor"></category></entry><entry><title>famo.us cdnから読み込んで実行する</title><link href="http://youske.github.io/famouscdn.html" rel="alternate"></link><updated>2014-05-22T21:30:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-22:famouscdn.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;famo.us famo.usのcdnを利用したPlunkerで利用できるようにする。&lt;/p&gt;
 &lt;h1&gt;設定&lt;/h1&gt;
 &lt;p&gt;&lt;head&gt;要素内にて以下のコードを記述
@@ -52,17 +60,18 @@ Projectページではgh-pagesというブランチが表示の対象。&lt;/p&g
 &lt;h2&gt;運用に関するフロー&lt;/h2&gt;
 &lt;p&gt;簡単フローとして&lt;/p&gt;
 &lt;p&gt;sourceブランチ&lt;/p&gt;</summary><category term="github"></category><category term="pelican"></category><category term="運用"></category></entry><entry><title>Pelicanのテーマを変えてみる。</title><link href="http://youske.github.io/pelicantheme.html" rel="alternate"></link><updated>2014-05-22T17:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-22:pelicantheme.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
-&lt;p&gt;既定のテーマでも個人的には問題は無いが、より見やすそうなテーマに変更&lt;/p&gt;
-&lt;h1&gt;設定方法&lt;/h1&gt;
-&lt;p&gt;pelicanconf.pyに設定項目&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;THEME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;'テーマが配置されているローカルディレクトリ'&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;として記述makeされるたびにここで指定されているテーマを利用してページが作成される。&lt;/p&gt;
-&lt;h1&gt;pelican-themesの取得&lt;/h1&gt;
-&lt;p&gt;そこでどこにテーマがあるのかと言うと
+&lt;p&gt;既定のテーマでも個人的には問題はないが、より見やすそうなテーマに変更&lt;/p&gt;
+&lt;h2&gt;pelican-themesの取得&lt;/h2&gt;
+&lt;p&gt;そこでどこにpelicanのテーマがあるのかと言うと
 https://github.com/getpelican/pelican-themes&lt;/p&gt;
-&lt;p&gt;git clone --recursive https://github.com/getpelican/pelican-themes 
-- 適当なディレクトリにリポジトリを作る。(pelicanconf.py THEME=に設定できるディレクトリ)&lt;/p&gt;</summary><category term="Pelican"></category><category term="theme"></category></entry><entry><title>github.io Userページを管理する</title><link href="http://youske.github.io/github.iopages.html" rel="alternate"></link><updated>2014-05-22T11:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-22:github.iopages.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;適当な位置にディレクトリを変更し
+    git clone --recursive https://github.com/getpelican/pelican-themes 
+    - 適当なディレクトリにリポジトリを作る。(pelicanconf.py THEME=に設定できるディレクトリ)&lt;/p&gt;
+&lt;h2&gt;設定方法&lt;/h2&gt;
+&lt;p&gt;pelicanconf.pyに設定項目&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;THEME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;'テーマが配置されているパス'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;として記述makeされるたびにここで指定されているテーマを利用してページが作成される。&lt;/p&gt;</summary><category term="Pelican"></category><category term="theme"></category></entry><entry><title>github.io Userページを管理する</title><link href="http://youske.github.io/github.iopages.html" rel="alternate"></link><updated>2014-05-22T11:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-22:github.iopages.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;github-pagesには大きく分け２つある。
 User向けのページとProject向けのページ
 githubのユーザページはmasterブランチに置かれているファイルが(htmlその他)表示の対象となっている。
@@ -103,18 +112,21 @@ source
 &lt;p&gt;Pelican + GitHubPagesなので動的ページでも無いし、DB接続もないので
 コメントの機能を外部サイトにて行う。
 PelicanではDisqusに対応しているので利用してみる。&lt;/p&gt;
-&lt;h1&gt;Disqusの導入&lt;/h1&gt;
+&lt;h2&gt;Disqusの導入&lt;/h2&gt;
 &lt;p&gt;サイトにアクセスしてアカウント作成&lt;/p&gt;
+&lt;h2&gt;pelicanconf.pyの編集&lt;/h2&gt;
 &lt;p&gt;pelicanconf.pyにて
     DISQUS_SITENAME='サイト名'&lt;/p&gt;
-&lt;p&gt;ここで言うサイト名はdisqusにて作成したサイトの名前
+&lt;p&gt;ここで言うサイト名はdisqusにて作成したサイトの名前(shortname)
 &lt;xxxxxx&gt;.disqus.com
 であるためサイト名はxxxxxxを入れる。&lt;/xxxxxx&gt;&lt;/p&gt;
 &lt;h1&gt;導入方法&lt;/h1&gt;
 &lt;p&gt;pelicanconf.pyファイルに以下のようにコードを追記&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;PLUGIN_PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;
 &lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;plugin1&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;plugin2&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="Disqus"></category></entry><entry><title>Pelican Plugin</title><link href="http://youske.github.io/peclianplugin.html" rel="alternate"></link><updated>2014-05-19T18:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-19:peclianplugin.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;問題点&lt;/h2&gt;
+&lt;p&gt;このような設定にてすべてのエントリにdisqusのコメントが付けられるようだが、表示されず。&lt;/p&gt;</summary><category term="pelican"></category><category term="Disqus"></category><category term="tips"></category></entry><entry><title>Pelican Plugin</title><link href="http://youske.github.io/peclianplugin.html" rel="alternate"></link><updated>2014-05-19T18:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-19:peclianplugin.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;pelicanでは様々なプラグインがあるようだ。
 これらを利用することでpelicanにはなかった機能を保管することができる。&lt;/p&gt;
 &lt;p&gt;[https://github.com/getpelican/pelican-plugins]&lt;/p&gt;
@@ -171,4 +183,18 @@ $&amp;gt; pip install bearutifulsoup4&lt;/li&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="テスト"></category></entry></feed>
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="test"></category></entry><entry><title>AIDEを用いたAndroidアプリケーションの実装</title><link href="http://youske.github.io/aidedevelop.html" rel="alternate"></link><updated>2014-05-02T10:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-02:aidedevelop.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;タイトルとしてややこしいですが、Android端末にてAndroidアプリを作ってみるのが目的&lt;/p&gt;
+&lt;p&gt;なぜそんなことをしたいのか？
+1. ちょっとした変更であればすぐにコード修正、アプリでテスト
+2. AndroidSDKをマシンにWindows,OSXにインストールするのがめんどくさいから
+3. 実行テストが結局のところAndroidマシンだから&lt;/p&gt;
+&lt;p&gt;この３つを考えると結局AndoridアプリでAPKを作った方がいいんじゃないか
+という思惑です。&lt;/p&gt;
+&lt;p&gt;幸いAIDEというアプリがあったのでインストール
+gitリポジトリにアクセスまでできるので、なかなか至れりつくセリ、&lt;/p&gt;
+&lt;p&gt;一番のネックであるコードを記載する環境がgitリポジトリにサポートで改善されていますね。
+かなり利便性があります。&lt;/p&gt;
+&lt;p&gt;学習方法として
+コンパイルマシン（AIDE搭載の端末） 調査用、コード変更用マシン
+完全に両者をAndroidマシンでやっても問題は無さそうですね。&lt;/p&gt;</summary><category term="AIDE"></category><category term="Android"></category><category term="develop"></category></entry></feed>

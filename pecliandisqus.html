@@ -49,14 +49,23 @@ development blog            </a>
                         <li >
                             <a href="./category/pelican.html">Pelican</a>
                         </li>
+                        <li class="active">
+                            <a href="./category/pelican-tips.html">Pelican, tips</a>
+                        </li>
                         <li >
                             <a href="./category/review.html">Review</a>
                         </li>
                         <li >
-                            <a href="./category/tesuto.html">テスト</a>
+                            <a href="./category/test.html">Test</a>
                         </li>
-                        <li class="active">
+                        <li >
                             <a href="./category/tips.html">Tips</a>
+                        </li>
+                        <li >
+                            <a href="./category/tips-aide.html">Tips, aide</a>
+                        </li>
+                        <li >
+                            <a href="./category/tips-esenthel.html">Tips, esenthel</a>
                         </li>
                         <li >
                             <a href="./category/tips-famous.html">Tips, famo.us</a>
@@ -100,6 +109,8 @@ development blog            </a>
 	<a href="./tag/pelican.html">pelican</a>
         /
 	<a href="./tag/disqus.html">Disqus</a>
+        /
+	<a href="./tag/tips.html">tips</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -107,11 +118,12 @@ development blog            </a>
 <p>Pelican + GitHubPagesなので動的ページでも無いし、DB接続もないので
 コメントの機能を外部サイトにて行う。
 PelicanではDisqusに対応しているので利用してみる。</p>
-<h1>Disqusの導入</h1>
+<h2>Disqusの導入</h2>
 <p>サイトにアクセスしてアカウント作成</p>
+<h2>pelicanconf.pyの編集</h2>
 <p>pelicanconf.pyにて
     DISQUS_SITENAME='サイト名'</p>
-<p>ここで言うサイト名はdisqusにて作成したサイトの名前
+<p>ここで言うサイト名はdisqusにて作成したサイトの名前(shortname)
 <xxxxxx>.disqus.com
 であるためサイト名はxxxxxxを入れる。</xxxxxx></p>
 <h1>導入方法</h1>
@@ -119,14 +131,16 @@ PelicanではDisqusに対応しているので利用してみる。</p>
 <div class="highlight"><pre><span class="n">PLUGIN_PATH</span> <span class="o">=</span> <span class="err">'</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">pelican</span><span class="o">-</span><span class="n">plugins</span><span class="err">'</span>
 <span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="err">'</span><span class="n">plugin1</span><span class="err">'</span><span class="p">,</span> <span class="err">'</span><span class="n">plugin2</span><span class="err">'</span><span class="p">,</span> <span class="p">]</span>
 </pre></div>
+<h2>問題点</h2>
+<p>このような設定にてすべてのエントリにdisqusのコメントが付けられるようだが、表示されず。</p>
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
     <ul>
+        <li><a href="./peclianplugin.html">Pelican Plugin</a></li>
         <li><a href="./github.iopages.html">github.io Userページを管理する</a></li>
         <li><a href="./pelicangithub.html">Pelican+GithubPagesの運用について</a></li>
-        <li><a href="./peclianplugin.html">Pelican Plugin</a></li>
         <li><a href="./pelicantheme.html">Pelicanのテーマを変えてみる。</a></li>
     </ul>
 </section>
@@ -192,8 +206,13 @@ PelicanではDisqusに対応しているので利用してみる。</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/webservice.html">
-                                webservice
+                            <a href="./tag/famous.html">
+                                famo.us
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/disqus.html">
+                                Disqus
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -202,18 +221,48 @@ PelicanではDisqusに対応しているので利用してみる。</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/plugin.html">
-                                plugin
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
                             <a href="./tag/codeanywhere.html">
                                 codeanywhere
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/tesuto.html">
-                                テスト
+                            <a href="./tag/editor.html">
+                                editor
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/esenthel.html">
+                                esenthel
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/test.html">
+                                test
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/aide.html">
+                                AIDE
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/webservice.html">
+                                webservice
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/plugin.html">
+                                plugin
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/android.html">
+                                Android
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/tips.html">
+                                tips
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -222,13 +271,8 @@ PelicanではDisqusに対応しているので利用してみる。</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/famous.html">
-                                famo.us
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="./tag/disqus.html">
-                                Disqus
+                            <a href="./tag/develop.html">
+                                develop
                             </a>
                         </li>
                     </ul>

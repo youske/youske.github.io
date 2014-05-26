@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>firebaseをRESTで読み書き - development blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- Open Graph tags -->
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="firebaseをRESTで読み書き"/>
+            <meta property="og:url" content="../firebarest.html"/>
+            <meta property="og:description" content="firebaseをRESTで利用してみる"/>
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+
+        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="development blog ATOM Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+development blog            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="../category/develop.html">Develop</a>
+                        </li>
+                        <li >
+                            <a href="../category/pelican.html">Pelican</a>
+                        </li>
+                        <li >
+                            <a href="../category/pelican-tips.html">Pelican, tips</a>
+                        </li>
+                        <li >
+                            <a href="../category/review.html">Review</a>
+                        </li>
+                        <li >
+                            <a href="../category/test.html">Test</a>
+                        </li>
+                        <li class="active">
+                            <a href="../category/tips.html">Tips</a>
+                        </li>
+                        <li >
+                            <a href="../category/tips-aide.html">Tips, aide</a>
+                        </li>
+                        <li >
+                            <a href="../category/tips-esenthel.html">Tips, esenthel</a>
+                        </li>
+                        <li >
+                            <a href="../category/tips-famous.html">Tips, famo.us</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../firebarest.html"
+                       rel="bookmark"
+                       title="Permalink to firebaseをRESTで読み書き">
+                        firebaseをRESTで読み書き
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-05-25T18:20:00"> 2014-05-25(Sun)</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="../tag/firebase.html">firebase</a>
+        /
+	<a href="../tag/rest.html">REST</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h1>概要</h1>
+<p>Firebase指定DBへのアクセスを実施してみる。</p>
+<p>上記検証はRESTClient アプリにて検証（Postman）
+HTTPリクエストを投げるツールで利用できる。
+コマンドラインでのアクセスではcurlを利用するとよい。</p>
+<h1>利用</h1>
+<h2>アクセス先</h2>
+<p>https://<firebase-database-name>.firabaseio.com/
+上記のアクセス先を基準としてネストされている場合は/にて区切り、その地点のデータを取り出したいところで.jsonを付加する。</firebase-database-name></p>
+<div class="highlight"><pre><span class="n">ex</span><span class="p">)</span>
+  <span class="n">https</span><span class="p">;</span><span class="c1">//fbstoredata.firebase.com/Users/youske.json</span>
+</pre></div>
+<h2>HTTPメソッド</h2>
+<p>firebase側に其のデータにアクセスする際に行われるコマンドをHTTPメソッドを指定する。
+<em> GET 読み込み
+</em> PUT　書き込み
+<em> POST　追加
+</em> PATCH　更新
+* DELETE 削除</p>
+<p>上記該当する行為自体エラーとなるので注意する。</p>
+<h3>GET</h3>
+<p>取りうるパラメータはなし
+urlに読み込むデータの位置+.jsonをつけてアクセスする。
+https://&lt;firebasedb名&gt;.firebaseio.com/Users/.json
+該当するデータそのものが無い場合はエラー文字列を返し
+空データの場合は空データを返す。</p>
+<h3>PUT</h3>
+<p>取りうるパラメータはjson文字列
+エンコードはしない,そのまま送りつける
+指定先にデータがない場合はエラー</p>
+<h3>POST</h3>
+<p>取りうるパラメータjson文字列
+現在あるデータに指定JSONデータを追記</p>
+<h3>PATCH</h3>
+<p>対象となるデータに対してパラメータの更新を行う。</p>
+<h3>DELET</h3>
+<p>対象となるデータを削除
+対象となるデータがない場合はエラーとなる。</p>
+<p>クエリパラメータとして送信する。</p>
+<p>認証
+auth=</p>
+<p>print=</p>
+<p>callback=</p>
+<p>format=</p>
+<p>download=</p>
+            </div>
+            <!-- /.entry-content -->
+    <hr />
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'youskegithubio'; // required: replace example with your forum shortname
+            var disqus_identifier = 'firebarest';
+            var disqus_url = '../firebarest.html';
+            var disqus_config = function () {
+                this.language = "jp";
+            };
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="#"><i
+                            class="fa fa-you can add links in your config file-square fa-lg"></i> You can add links in your config file
+                    </a></li>
+                    <li class="list-group-item"><a href="#"><i
+                            class="fa fa-another social link-square fa-lg"></i> Another social link
+                    </a></li>
+                  </ul>
+                </li>
+
+
+
+                <li class="list-group-item"><a href="../"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group" id="tags">
+                        <li class="list-group-item tag-1">
+                            <a href="../tag/pelican.html">
+                                pelican
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="../tag/github.html">
+                                github
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/famous.html">
+                                famo.us
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/disqus.html">
+                                Disqus
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/theme.html">
+                                theme
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/codeanywhere.html">
+                                codeanywhere
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/editor.html">
+                                editor
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/esenthel.html">
+                                esenthel
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/test.html">
+                                test
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/aide.html">
+                                AIDE
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/webservice.html">
+                                webservice
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/plugin.html">
+                                plugin
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/android.html">
+                                Android
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/tips.html">
+                                tips
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/yun-yong.html">
+                                運用
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/develop.html">
+                                develop
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://github.com/youske/" target="_blank">
+                github mypage
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://plnkr.co/users/youske" target="_blank">
+                Plunker mypage
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
+            </a>
+        </li>
+      </ul>
+    </li>
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2014 youske
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="//code.jquery.com/jquery.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'youskegithubio'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-51245385-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+</html>

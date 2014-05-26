@@ -14,7 +14,7 @@
             <meta property="og:type" content="article"/>
             <meta property="og:title" content="github.io Userページを管理する"/>
             <meta property="og:url" content="./github.iopages.html"/>
-            <meta property="og:description" content="Userページを管理する方法"/>
+            <meta property="og:description" content="github Userページを管理する方法"/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css"/>
@@ -48,6 +48,9 @@ development blog            </a>
                         </li>
                         <li >
                             <a href="./category/pelican.html">Pelican</a>
+                        </li>
+                        <li >
+                            <a href="./category/review.html">Review</a>
                         </li>
                         <li >
                             <a href="./category/tesuto.html">テスト</a>
@@ -101,7 +104,9 @@ development blog            </a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h1>概要</h1>
-<p>githubのユーザページはmasterブランチに置かれているファイルが(htmlその他)表示の対象となっている。
+<p>github-pagesには大きく分け２つある。
+User向けのページとProject向けのページ
+githubのユーザページはmasterブランチに置かれているファイルが(htmlその他)表示の対象となっている。
 Projectページではgh-pagesというブランチが表示の対象。</p>
 <p>User ページにおいてこの仕様で問題なのは、直接masterブランチにhtmlなどのファイルを配置する場合
 特に問題ないが、静的サイトジェネレータを使って出力した結果をページにしたい場合
@@ -142,8 +147,8 @@ source
     <h4>Related Posts:</h4>
     <ul>
         <li><a href="./pelicangithub.html">Pelican+GithubPagesの運用について</a></li>
-        <li><a href="./pecliandisqus.html">Disqusアカウント、コメントを利用する Pelicanのコメント機能</a></li>
         <li><a href="./peclianplugin.html">Pelican Plugin</a></li>
+        <li><a href="./pecliandisqus.html">Disqusアカウント、コメントを利用する Pelicanのコメント機能</a></li>
         <li><a href="./pelicantheme.html">Pelicanのテーマを変えてみる。</a></li>
     </ul>
 </section>
@@ -209,18 +214,23 @@ source
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/disqus.html">
-                                Disqus
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="./tag/famous.html">
-                                famo.us
+                            <a href="./tag/webservice.html">
+                                webservice
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
                             <a href="./tag/theme.html">
                                 theme
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/plugin.html">
+                                plugin
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/codeanywhere.html">
+                                codeanywhere
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -234,8 +244,13 @@ source
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/plugin.html">
-                                plugin
+                            <a href="./tag/famous.html">
+                                famo.us
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/disqus.html">
+                                Disqus
                             </a>
                         </li>
                     </ul>

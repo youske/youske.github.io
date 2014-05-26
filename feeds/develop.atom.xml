@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>development blog</title><link href="http://youske.github.io/" rel="alternate"></link><link href="http://youske.github.io/feeds/develop.atom.xml" rel="self"></link><id>http://youske.github.io/</id><updated>2014-05-22T11:00:00+09:00</updated><entry><title>github.io Userページを管理する</title><link href="http://youske.github.io/github.iopages.html" rel="alternate"></link><updated>2014-05-22T11:00:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-22:github.iopages.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
-&lt;p&gt;githubのユーザページはmasterブランチに置かれているファイルが(htmlその他)表示の対象となっている。
+&lt;p&gt;github-pagesには大きく分け２つある。
+User向けのページとProject向けのページ
+githubのユーザページはmasterブランチに置かれているファイルが(htmlその他)表示の対象となっている。
 Projectページではgh-pagesというブランチが表示の対象。&lt;/p&gt;
 &lt;p&gt;User ページにおいてこの仕様で問題なのは、直接masterブランチにhtmlなどのファイルを配置する場合
 特に問題ないが、静的サイトジェネレータを使って出力した結果をページにしたい場合

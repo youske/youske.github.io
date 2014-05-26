@@ -50,6 +50,9 @@ development blog            </a>
                             <a href="./category/pelican.html">Pelican</a>
                         </li>
                         <li >
+                            <a href="./category/review.html">Review</a>
+                        </li>
+                        <li >
                             <a href="./category/tesuto.html">テスト</a>
                         </li>
                         <li class="active">
@@ -100,22 +103,33 @@ development blog            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h1>pelican プラグイン</h1>
-<p>pelicanでは様々なプラグインがあるようだ。</p>
+                <h1>概要</h1>
+<p>pelicanでは様々なプラグインがあるようだ。
+これらを利用することでpelicanにはなかった機能を保管することができる。</p>
 <p>[https://github.com/getpelican/pelican-plugins]</p>
 <h1>導入方法</h1>
+<p>githubよりcloneする。</p>
+<p>$&gt; git clone https://github.com/getpelican/pelican-plugins
+(現在いるディレクトリにコピーが作られるので注意)</p>
 <p>pelicanconf.pyファイルに以下のようにコードを追記</p>
 <div class="highlight"><pre><span class="n">PLUGIN_PATH</span> <span class="o">=</span> <span class="err">'</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">pelican</span><span class="o">-</span><span class="n">plugins</span><span class="err">'</span>
 <span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="err">'</span><span class="n">plugin1</span><span class="err">'</span><span class="p">,</span> <span class="err">'</span><span class="n">plugin2</span><span class="err">'</span><span class="p">,</span> <span class="p">]</span>
 </pre></div>
+<p>PLUGINSには並列で導入したいプラグインのフォルダ名を入れる。</p>
+<h1>プラグインの紹介</h1>
+<ul>
+<li>tipue search
+beautifulsoup4が必要となる。
+$&gt; pip install bearutifulsoup4</li>
+</ul>
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
     <ul>
         <li><a href="./github.iopages.html">github.io Userページを管理する</a></li>
-        <li><a href="./pelicantheme.html">Pelicanのテーマを変えてみる。</a></li>
         <li><a href="./pelicangithub.html">Pelican+GithubPagesの運用について</a></li>
+        <li><a href="./pelicantheme.html">Pelicanのテーマを変えてみる。</a></li>
         <li><a href="./pecliandisqus.html">Disqusアカウント、コメントを利用する Pelicanのコメント機能</a></li>
     </ul>
 </section>
@@ -181,18 +195,23 @@ development blog            </a>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/disqus.html">
-                                Disqus
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="./tag/famous.html">
-                                famo.us
+                            <a href="./tag/webservice.html">
+                                webservice
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
                             <a href="./tag/theme.html">
                                 theme
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/plugin.html">
+                                plugin
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/codeanywhere.html">
+                                codeanywhere
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -206,8 +225,13 @@ development blog            </a>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/plugin.html">
-                                plugin
+                            <a href="./tag/famous.html">
+                                famo.us
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/disqus.html">
+                                Disqus
                             </a>
                         </li>
                     </ul>

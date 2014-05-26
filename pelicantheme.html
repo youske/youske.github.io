@@ -50,6 +50,9 @@ development blog            </a>
                             <a href="./category/pelican.html">Pelican</a>
                         </li>
                         <li >
+                            <a href="./category/review.html">Review</a>
+                        </li>
+                        <li >
                             <a href="./category/tesuto.html">テスト</a>
                         </li>
                         <li >
@@ -101,25 +104,25 @@ development blog            </a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h1>概要</h1>
-<p>既定のテーマでも問題は無いが、見やすそうなテーマに変更</p>
+<p>既定のテーマでも個人的には問題は無いが、より見やすそうなテーマに変更</p>
 <h1>設定方法</h1>
 <p>pelicanconf.pyに設定項目</p>
-<div class="highlight"><pre><span class="n">THEME</span><span class="o">=</span><span class="err">'テーマが配置されているフォルダ'</span>
+<div class="highlight"><pre><span class="n">THEME</span><span class="o">=</span><span class="err">'テーマが配置されているローカルディレクトリ'</span>
 </pre></div>
-<p>として記述</p>
+<p>として記述makeされるたびにここで指定されているテーマを利用してページが作成される。</p>
+<h1>pelican-themesの取得</h1>
 <p>そこでどこにテーマがあるのかと言うと
 https://github.com/getpelican/pelican-themes</p>
-<h1>pelican-themesの取得</h1>
 <p>git clone --recursive https://github.com/getpelican/pelican-themes 
-- カレントディレクトリにリポジトリを作る。</p>
+- 適当なディレクトリにリポジトリを作る。(pelicanconf.py THEME=に設定できるディレクトリ)</p>
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
     <ul>
         <li><a href="./github.iopages.html">github.io Userページを管理する</a></li>
-        <li><a href="./peclianplugin.html">Pelican Plugin</a></li>
         <li><a href="./pelicangithub.html">Pelican+GithubPagesの運用について</a></li>
+        <li><a href="./peclianplugin.html">Pelican Plugin</a></li>
         <li><a href="./pecliandisqus.html">Disqusアカウント、コメントを利用する Pelicanのコメント機能</a></li>
     </ul>
 </section>
@@ -185,18 +188,23 @@ https://github.com/getpelican/pelican-themes</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/disqus.html">
-                                Disqus
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="./tag/famous.html">
-                                famo.us
+                            <a href="./tag/webservice.html">
+                                webservice
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
                             <a href="./tag/theme.html">
                                 theme
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/plugin.html">
+                                plugin
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/codeanywhere.html">
+                                codeanywhere
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -210,8 +218,13 @@ https://github.com/getpelican/pelican-themes</p>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="./tag/plugin.html">
-                                plugin
+                            <a href="./tag/famous.html">
+                                famo.us
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="./tag/disqus.html">
+                                Disqus
                             </a>
                         </li>
                     </ul>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>development blog</title><link href="http://youske.github.io/" rel="alternate"></link><link href="http://youske.github.io/feeds/review.atom.xml" rel="self"></link><id>http://youske.github.io/</id><updated>2014-05-24T16:30:00+09:00</updated><entry><title>codeanywhereについて</title><link href="http://youske.github.io/codeanywherereview.html" rel="alternate"></link><updated>2014-05-24T16:30:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-24:codeanywherereview.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;codeanywhereはcloudエディタで
+リモート側の仮想ドライブsandboxにファイルを配置し編集する事ができる。
+そのようなことから、別のマシンからそのファイルへの読み書きを行うことができ、
+ウェブから、iOS,Androidからでもアクセスできる。かなり意欲的なウェブサービス
+sandbox以外のクラウドサービス dropbox github
+ftp,sftpでの接続もでき、有料サービスではssh接続もできるという。
+どんなにすごいか試してみた。&lt;/p&gt;
+&lt;h1&gt;レビュー&lt;/h1&gt;
+&lt;p&gt;とりあえずお題目上アカウントを作成して、ファイルを配置、編集ひと通りの操作はできた。
+別の端末からのアクセスも実施 （Android版は何故かユーザログインすらできないので利用していない。）
+＊古いバージョンと新しいバージョンでアプリが異なるものが配布されているようなので新しいバージョンのアプリにすれば解決される。&lt;/p&gt;
+&lt;p&gt;sandboxの利用（無料枠では5MBのストレージ）することができる。&lt;/p&gt;
+&lt;p&gt;エディタとしては現状では機能が足りていないことが否めない。
+コードコンプリート機能があるが、どちらかと言えばキーマクロをつけてほしいな。
+全般的に動作は割りと軽いので、あまりストレスを感じることはなさそう。
+dropboxのファイルにダイレクトにアクセスして保存できるのは仲な良い。&lt;/p&gt;
+&lt;p&gt;sandboxのディスク容量が5MB、有料化しても500MB程度なので、dropbox利用で代替ができてしまう。
+HTML,javascriptのコードであればプレビューに使える。&lt;/p&gt;
+&lt;h1&gt;まとめ&lt;/h1&gt;
+&lt;p&gt;全体として似たようなオンラインエディタサービスはあるが、群を抜いて完成度が高い。
+はっきり言えば他のサービスがエディタの機能を有していないことがまず挙げられる。
+ただほしいエディタとしての機能がかけているので、個人的には常用は向かない。
+といってもchromebookからのアクセス、他のデバイスからのアクセスができるので、利用は多いかもしれない。
+無料枠ではdropboxの直接編集のみが売りのようだ sandbox 5MBはほぼいらない。&lt;/p&gt;
+&lt;p&gt;パソコンにエディタをインストールして利用するスタイルを完全に覆している為、なかなか良い方向性だと思う。
+シンクライアント（厳密にはシンクライアントではないがchromeosの乗ったchromebook)には完全に用途が合致している。
+むしろこの分野ではそれしか選択肢が無いとも言える。&lt;/p&gt;
+&lt;p&gt;どちらかと言えばこちらよりnitros.IOのほうが利便性が高い。
+nitrous.IOはサーバⅠ台をまるごと利用できるのでアドバンテージは高い（git, 他のソフトウェアもインストールできる。）&lt;/p&gt;</summary><category term="codeanywhere"></category><category term="webservice"></category></entry></feed>

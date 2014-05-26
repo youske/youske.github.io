@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>Pelicanプラグインについて解説（導入している物） - development blog</title>
+    <title>codeanywhereについて - development blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -12,18 +12,18 @@
 
     <!-- Open Graph tags -->
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="Pelicanプラグインについて解説（導入している物）"/>
-            <meta property="og:url" content="../pelicanplugin2.html"/>
-            <meta property="og:description" content="pelicanプラグインについての解説"/>
+            <meta property="og:title" content="codeanywhereについて"/>
+            <meta property="og:url" content="./codeanywherereview.html"/>
+            <meta property="og:description" content="codeanywhereを利用してみた感想"/>
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="../theme/css/pygments/native.css" rel="stylesheet">
-    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+    <link href="./theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
 
-        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="development blog ATOM Feed"/>
 
 </head>
@@ -38,32 +38,32 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="../" class="navbar-brand">
+            <a href="./" class="navbar-brand">
 development blog            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li >
-                            <a href="../category/develop.html">Develop</a>
+                            <a href="./category/develop.html">Develop</a>
                         </li>
                         <li >
-                            <a href="../category/pelican.html">Pelican</a>
-                        </li>
-                        <li >
-                            <a href="../category/review.html">Review</a>
-                        </li>
-                        <li >
-                            <a href="../category/tesuto.html">テスト</a>
+                            <a href="./category/pelican.html">Pelican</a>
                         </li>
                         <li class="active">
-                            <a href="../category/tips.html">Tips</a>
+                            <a href="./category/review.html">Review</a>
                         </li>
                         <li >
-                            <a href="../category/tips-famous.html">Tips, famo.us</a>
+                            <a href="./category/tesuto.html">テスト</a>
+                        </li>
+                        <li >
+                            <a href="./category/tips.html">Tips</a>
+                        </li>
+                        <li >
+                            <a href="./category/tips-famous.html">Tips, famo.us</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+                <li><a href="./archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -78,10 +78,10 @@ development blog            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../pelicanplugin2.html"
+                    <a href="./codeanywherereview.html"
                        rel="bookmark"
-                       title="Permalink to Pelicanプラグインについて解説（導入している物）">
-                        Pelicanプラグインについて解説（導入している物）
+                       title="Permalink to codeanywhereについて">
+                        codeanywhereについて
                     </a>
                 </h1>
             </header>
@@ -91,18 +91,48 @@ development blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-05-25T15:00:00"> 2014-05-25(Sun)</time>
+        <i class="fa fa-calendar"></i><time datetime="2014-05-24T16:30:00"> 2014-05-24(Sat)</time>
     </span>
 
 
 
 <span class="label label-default">Tags</span>
-	<a href="../tag/pelican.html">Pelican</a>
+	<a href="./tag/codeanywhere.html">codeanywhere</a>
+        /
+	<a href="./tag/webservice.html">webservice</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h1>概要</h1>
-<h1>導入設定</h1>
+<p>codeanywhereはcloudエディタで
+リモート側の仮想ドライブsandboxにファイルを配置し編集する事ができる。
+そのようなことから、別のマシンからそのファイルへの読み書きを行うことができ、
+ウェブから、iOS,Androidからでもアクセスできる。かなり意欲的なウェブサービス
+sandbox以外のクラウドサービス dropbox github
+ftp,sftpでの接続もでき、有料サービスではssh接続もできるという。
+どんなにすごいか試してみた。</p>
+<h1>レビュー</h1>
+<p>とりあえずお題目上アカウントを作成して、ファイルを配置、編集ひと通りの操作はできた。
+別の端末からのアクセスも実施 （Android版は何故かユーザログインすらできないので利用していない。）
+＊古いバージョンと新しいバージョンでアプリが異なるものが配布されているようなので新しいバージョンのアプリにすれば解決される。</p>
+<p>sandboxの利用（無料枠では5MBのストレージ）することができる。</p>
+<p>エディタとしては現状では機能が足りていないことが否めない。
+コードコンプリート機能があるが、どちらかと言えばキーマクロをつけてほしいな。
+全般的に動作は割りと軽いので、あまりストレスを感じることはなさそう。
+dropboxのファイルにダイレクトにアクセスして保存できるのは仲な良い。</p>
+<p>sandboxのディスク容量が5MB、有料化しても500MB程度なので、dropbox利用で代替ができてしまう。
+HTML,javascriptのコードであればプレビューに使える。</p>
+<h1>まとめ</h1>
+<p>全体として似たようなオンラインエディタサービスはあるが、群を抜いて完成度が高い。
+はっきり言えば他のサービスがエディタの機能を有していないことがまず挙げられる。
+ただほしいエディタとしての機能がかけているので、個人的には常用は向かない。
+といってもchromebookからのアクセス、他のデバイスからのアクセスができるので、利用は多いかもしれない。
+無料枠ではdropboxの直接編集のみが売りのようだ sandbox 5MBはほぼいらない。</p>
+<p>パソコンにエディタをインストールして利用するスタイルを完全に覆している為、なかなか良い方向性だと思う。
+シンクライアント（厳密にはシンクライアントではないがchromeosの乗ったchromebook)には完全に用途が合致している。
+むしろこの分野ではそれしか選択肢が無いとも言える。</p>
+<p>どちらかと言えばこちらよりnitros.IOのほうが利便性が高い。
+nitrous.IOはサーバⅠ台をまるごと利用できるのでアドバンテージは高い（git, 他のソフトウェアもインストールできる。）</p>
             </div>
             <!-- /.entry-content -->
     <hr />
@@ -112,8 +142,8 @@ development blog            </a>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'youskegithubio'; // required: replace example with your forum shortname
-            var disqus_identifier = 'pelicanplugin2';
-            var disqus_url = '../pelicanplugin2.html';
+            var disqus_identifier = 'codeanywherereview';
+            var disqus_url = './codeanywherereview.html';
             var disqus_config = function () {
                 this.language = "jp";
             };
@@ -154,55 +184,55 @@ development blog            </a>
 
 
 
-                <li class="list-group-item"><a href="../"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <li class="list-group-item"><a href="./"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                     <ul class="list-group" id="tags">
                         <li class="list-group-item tag-1">
-                            <a href="../tag/pelican.html">
+                            <a href="./tag/pelican.html">
                                 pelican
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
-                            <a href="../tag/github.html">
+                            <a href="./tag/github.html">
                                 github
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/webservice.html">
+                            <a href="./tag/webservice.html">
                                 webservice
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/theme.html">
+                            <a href="./tag/theme.html">
                                 theme
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/plugin.html">
+                            <a href="./tag/plugin.html">
                                 plugin
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/codeanywhere.html">
+                            <a href="./tag/codeanywhere.html">
                                 codeanywhere
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/tesuto.html">
+                            <a href="./tag/tesuto.html">
                                 テスト
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/yun-yong.html">
+                            <a href="./tag/yun-yong.html">
                                 運用
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/famous.html">
+                            <a href="./tag/famous.html">
                                 famo.us
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/disqus.html">
+                            <a href="./tag/disqus.html">
                                 Disqus
                             </a>
                         </li>
@@ -254,10 +284,10 @@ development blog            </a>
 <script src="//code.jquery.com/jquery.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../theme/js/bootstrap.min.js"></script>
+<script src="./theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="../theme/js/respond.min.js"></script>
+<script src="./theme/js/respond.min.js"></script>
 
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

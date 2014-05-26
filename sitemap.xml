@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://youske.github.io/index.html</loc>
-<lastmod>2014-05-23T11:07:56-00:00</lastmod>
+<lastmod>2014-05-26T02:18:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://youske.github.io/archives.html</loc>
-<lastmod>2014-05-23T11:07:56-00:00</lastmod>
+<lastmod>2014-05-26T02:18:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://youske.github.io/tags.html</loc>
-<lastmod>2014-05-23T11:07:56-00:00</lastmod>
+<lastmod>2014-05-26T02:18:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://youske.github.io/categories.html</loc>
-<lastmod>2014-05-23T11:07:56-00:00</lastmod>
+<lastmod>2014-05-26T02:18:15-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://youske.github.io/codeanywherereview.html</loc>
+<lastmod>2014-05-24T16:30:00-00:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -95,6 +102,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://youske.github.io/category/review.html</loc>
+<lastmod>2014-05-24T16:30:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://youske.github.io/category/tesuto.html</loc>
 <lastmod>2014-05-19T09:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
@@ -137,8 +151,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://youske.github.io/tag/webservice.html</loc>
+<lastmod>2014-05-24T16:30:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://youske.github.io/tag/plugin.html</loc>
 <lastmod>2014-05-19T18:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://youske.github.io/tag/codeanywhere.html</loc>
+<lastmod>2014-05-24T16:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -173,7 +201,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://youske.github.io/author/youske.html</loc>
-<lastmod>2014-05-22T21:30:00-00:00</lastmod>
+<lastmod>2014-05-24T16:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

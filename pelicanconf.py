@@ -53,8 +53,6 @@ RELATIVE_URLS = True
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
 
-
-
 # plugin settings
 PLUGIN_PATH = '/home/action/workspace/pelican-plugins/'
 PLUGINS = [
@@ -76,11 +74,6 @@ SITEMAP = {
   }
 }
 
+# Category Settings
 USE_FOLDER_AS_CATEGORY = True
 DEFAULT_CATEGORY = ''
-
-
-
-
-
-

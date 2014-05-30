@@ -47,6 +47,9 @@ development blog            </a>
                             <a href="../category/develop.html">Develop</a>
                         </li>
                         <li >
+                            <a href="../category/git.html">Git</a>
+                        </li>
+                        <li >
                             <a href="../category/pelican.html">Pelican</a>
                         </li>
                         <li >
@@ -113,11 +116,16 @@ development blog            </a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h1>概要</h1>
-<p>famo.usはこれまでのDOM操作
+<p>famo.usはこれまでのDOM書き換えによるページ内を動的に変更する仕組みだったが
 単なるHTML5ウェブアプリで高速に描画するライブラリだと思っていましたが、次世代のフレームワークであると言えます。
 またこれまでDOMのアクセス、操作編集と言ったjavascriptの色見から
 document,view
-平たく言えばかなりゲームシステムに近い考え方になります。</p>
+平たく言えばかなりゲームシステムに近い考え方になります。
+スプライト、バックグラウンド、レンダリングツリーなど</p>
+<h1>構造</h1>
+<p>構造はゲーム制作を行った方だと取っ付きやすいと思います。
+サーフェイスと呼ぶ。描画コンテンツを設定し、アニメーションを指定する。
+レンダリングコンテキストに対してデータを追加していくことでレンダリングを更新していく。</p>
 <h1>読み取り</h1>
 <p>サンプルなどを読み取って行くとFamousの中核をなすEngineに対してView,Surfaceなどを接続し、
 Modifierなる変換をサーフェイス、viewに対して変換を行うことでシングルページアプリを構成します。</p>
@@ -128,6 +136,7 @@ Surface、Viewへの時間、空間の変換を設定しスタートさせます
 <p>ライブラリ内には
 Collision,Physicsなどもあることを想像するにゲームライブラリ（確実にゲームは作れますね。）
 をデザインの元としているような感じです。</p>
+<p>ライブラリとしてはかなり使いやすいインターフェイスを用意しており、現時点ではすべて見てはいないですが、今後に多大なる期待をせざるおえません。</p>
             </div>
             <!-- /.entry-content -->
     <hr />
@@ -187,23 +196,18 @@ Collision,Physicsなどもあることを想像するにゲームライブラリ
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
+                            <a href="../tag/webservice.html">
+                                webservice
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
                             <a href="../tag/github.html">
                                 github
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/famous.html">
-                                famo.us
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="../tag/disqus.html">
-                                Disqus
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="../tag/theme.html">
-                                theme
+                            <a href="../tag/develop.html">
+                                develop
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -212,13 +216,28 @@ Collision,Physicsなどもあることを想像するにゲームライブラリ
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/editor.html">
-                                editor
+                            <a href="../tag/submodle.html">
+                                submodle
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/esenthel.html">
-                                esenthel
+                            <a href="../tag/famous.html">
+                                famo.us
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/tips.html">
+                                tips
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/disqus.html">
+                                Disqus
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/android.html">
+                                Android
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -232,8 +251,13 @@ Collision,Physicsなどもあることを想像するにゲームライブラリ
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/webservice.html">
-                                webservice
+                            <a href="../tag/yun-yong.html">
+                                運用
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/plunker.html">
+                                plunker
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -242,23 +266,23 @@ Collision,Physicsなどもあることを想像するにゲームライブラリ
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/android.html">
-                                Android
+                            <a href="../tag/esenthel.html">
+                                esenthel
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/tips.html">
-                                tips
+                            <a href="../tag/git.html">
+                                git
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/yun-yong.html">
-                                運用
+                            <a href="../tag/editor.html">
+                                editor
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/develop.html">
-                                develop
+                            <a href="../tag/theme.html">
+                                theme
                             </a>
                         </li>
                     </ul>

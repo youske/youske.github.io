@@ -47,6 +47,9 @@ development blog            </a>
                             <a href="../category/develop.html">Develop</a>
                         </li>
                         <li >
+                            <a href="../category/git.html">Git</a>
+                        </li>
+                        <li >
                             <a href="../category/pelican.html">Pelican</a>
                         </li>
                         <li >
@@ -121,8 +124,13 @@ development blog            </a>
 select-optionsはng-repeatではなくng-optionsを利用するとよい。
 これはng-optionsにはselect-option向けの設定があるからなのだが</p>
 <h2>どこがハマりどころか？</h2>
-<p>そもそもselectで選択されているものとoptionsのselectが別な要素のため
-一方を書き換えても連動して変更されないため。</p>
+<div class="highlight"><pre><span class="nt">&lt;select</span> <span class="na">ng-model=</span><span class="s">"selectedII"</span> <span class="err">ng-options"ii.value</span> <span class="err">as</span> <span class="err">ii.c</span> <span class="err">for</span> <span class="err">ii</span> <span class="err">in</span> <span class="err">items"</span><span class="nt">&gt;&lt;/select&gt;</span>
+</pre></div>
+<p>このような記述においていろいろと不明な点がある。
+ng-modelで示されるデータは何が入っているのか？
+ng-optionsで示されるデータが何なのか？</p>
+<p>結論として
+ng-optionsの指定は次のような形となる。</p>
 <p>ng-includeディレクティブは指定のモデルに設定されるファイル名からHTMLコンテンツを読み取り
 ng-includeの指定されている外部ファイルをディレクティブに埋め込んでくれる。
 modelが変更されれば当然インクルードされる外部ファイルも変わるはずなので、色々と使い道がありそう。</p>
@@ -192,23 +200,18 @@ modelが変更されれば当然インクルードされる外部ファイルも
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
+                            <a href="../tag/webservice.html">
+                                webservice
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
                             <a href="../tag/github.html">
                                 github
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/famous.html">
-                                famo.us
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="../tag/disqus.html">
-                                Disqus
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="../tag/theme.html">
-                                theme
+                            <a href="../tag/develop.html">
+                                develop
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -217,13 +220,28 @@ modelが変更されれば当然インクルードされる外部ファイルも
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/editor.html">
-                                editor
+                            <a href="../tag/submodle.html">
+                                submodle
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/esenthel.html">
-                                esenthel
+                            <a href="../tag/famous.html">
+                                famo.us
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/tips.html">
+                                tips
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/disqus.html">
+                                Disqus
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/android.html">
+                                Android
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -237,8 +255,13 @@ modelが変更されれば当然インクルードされる外部ファイルも
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/webservice.html">
-                                webservice
+                            <a href="../tag/yun-yong.html">
+                                運用
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/plunker.html">
+                                plunker
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -247,23 +270,23 @@ modelが変更されれば当然インクルードされる外部ファイルも
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/android.html">
-                                Android
+                            <a href="../tag/esenthel.html">
+                                esenthel
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/tips.html">
-                                tips
+                            <a href="../tag/git.html">
+                                git
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/yun-yong.html">
-                                運用
+                            <a href="../tag/editor.html">
+                                editor
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/develop.html">
-                                develop
+                            <a href="../tag/theme.html">
+                                theme
                             </a>
                         </li>
                     </ul>

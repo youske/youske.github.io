@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>development blog</title><link href="http://youske.github.io/" rel="alternate"></link><link href="http://youske.github.io/feeds/review.atom.xml" rel="self"></link><id>http://youske.github.io/</id><updated>2014-05-24T16:30:00+09:00</updated><entry><title>codeanywhereについて</title><link href="http://youske.github.io/codeanywherereview.html" rel="alternate"></link><updated>2014-05-24T16:30:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-24:codeanywherereview.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>development blog</title><link href="http://youske.github.io/" rel="alternate"></link><link href="http://youske.github.io/feeds/review.atom.xml" rel="self"></link><id>http://youske.github.io/</id><updated>2014-05-27T16:30:00+09:00</updated><entry><title>plunkerについて</title><link href="http://youske.github.io/plunkerreview.html" rel="alternate"></link><updated>2014-05-27T16:30:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-27:plunkerreview.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;オンライン上でコードの記述、実行を行うことができるサービス。
+似たようなサービスとしてjsFiddle,jsDoItのサービスがある。&lt;/p&gt;
+&lt;h1&gt;レビュー&lt;/h1&gt;
+&lt;p&gt;コードの記述、結果の表示の一連の流れについて、文句なくレスポンスもいいので、さくさくコードを記載できる。
+ファイルを幾つか登録して、ほぼコードのプロトタイプを作成することができる。&lt;/p&gt;
+&lt;p&gt;ディレクトリ管理を行うことができないがあまり気にならない。
+大規模なソースを作るわけではない。&lt;/p&gt;
+&lt;h1&gt;まとめ&lt;/h1&gt;
+&lt;p&gt;デバッグの方法はあるが、追従できないので、
+結構面倒である。（実際にはあるのかな？）&lt;/p&gt;</summary><category term="plunker"></category><category term="webservice"></category></entry><entry><title>codeanywhereについて</title><link href="http://youske.github.io/codeanywherereview.html" rel="alternate"></link><updated>2014-05-24T16:30:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-24:codeanywherereview.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;codeanywhereはcloudエディタで
 リモート側の仮想ドライブsandboxにファイルを配置し編集する事ができる。
 そのようなことから、別のマシンからそのファイルへの読み書きを行うことができ、

@@ -47,6 +47,9 @@ development blog            </a>
                             <a href="../category/develop.html">Develop</a>
                         </li>
                         <li >
+                            <a href="../category/git.html">Git</a>
+                        </li>
+                        <li >
                             <a href="../category/pelican.html">Pelican</a>
                         </li>
                         <li >
@@ -114,21 +117,72 @@ development blog            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h1></h1>
+                <h1>概要</h1>
+<p>廃墟と化した街に滞在する生存者の生き残りを</p>
 <h2>登場要素</h2>
 <p>生存者が複数存在し、チーム分けされる。
 役職が設定され、能力、行動、判定が変わる。</p>
-<p>１チームに６人から８人のキャラクターを駆使し、勝利条件とする。</p>
+<p>１チームに６人から８人のキャラクターを駆使し、勝利条件とする。
+最大４チーム最大３２の個別キャラクターを設定
+オンラインゲームとしてあればこの要素は課金対象にできるかも。</p>
+<p>技能
+裏技能
+ボーナス
+ペナルティ</p>
+<p>体育会系
+　名前、　表技能、　　裏技能、　ボーナス、　ペナルティ
+　+1多く食い止める
+  技
+  足が速い
+　武器を＋１回多く使える。</p>
+<p>オタク
+　名前、　表技能、　　裏技能、　ボーナス、　ペナルティ
+　修理
+　撃退
+ 超能力</p>
+<p>ガリ勉
+　名前、　表技能、　　裏技能、　ボーナス、　ペナルティ
+　ハッキング</p>
+<p>金持ち
+　名前、　表技能、　　裏技能、　ボーナス、　ペナルティ
+　脅し
+　買収　</p>
 <p>襲撃者
-生存者を攻撃するための要素</p>
+生存者を攻撃するための要素
+　感染者　１人分のちょさ
+ 遊撃者　１人分の強さ　封鎖を破壊できる。
+ デブ　２人分の強さ
+ キン肉マン　３人分の強さ</p>
+<p>イベント（アクシデントも含む）</p>
+<p>ルール</p>
+<p>部屋の設備
+マップパーツを組み合わせることで街の構造、様子ゲーム性を変更することができる。</p>
 <h2>街の防衛の目的</h2>
-<p>勝利条件
-<em> すべての侵入経路の封鎖
-</em> 脱出用品を集めて脱出
-<em> 他のチームの全滅　１チームだけでもよい。
-</em> </p>
+<h3>勝利条件</h3>
+<ul>
+<li>すべての侵入経路の封鎖</li>
+<li>脱出用品を集めて脱出</li>
+<li>他のチームの全滅　１チームだけでもよい。</li>
+<li></li>
+</ul>
+<h3>敗北条件</h3>
+<ul>
+<li>チーム、エンバーの全滅</li>
+<li>特定の設備を複数占拠される。</li>
+<li>脱出用品の喪失</li>
+</ul>
 <h2>token</h2>
-<p>脱出用品すｂ手の</p>
+<p>脱出用品
+　　携帯無線
+  　信号弾
+   大きなシーツ</p>
+<p>進行キャンセル
+　　バリケード
+　　通路を封鎖することができる。
+  　進行を食い止めることができるが、中の襲撃者をとどまらせる。</p>
+<p>襲撃回避</p>
+<p>迎撃</p>
+<p>不安要素</p>
 <h3>生存者の行動</h3>
 <p>１プレイヤーはチームの中で３人行動することができる。
 行動は
@@ -136,33 +190,6 @@ development blog            </a>
 * 探索
 ＊　特殊能力の発動
 ＊　</p>
-<h1>概要</h1>
-<p>RTSのゲームシミュレーションエンジンの設計を行う。</p>
-<p>この仮想のゲームは次の要素を持つ。</p>
-<ol>
-<li>資源の概念</li>
-<li>マップ</li>
-<li>建築物</li>
-<li>ユニット</li>
-<li>資金、資源</li>
-<li>マップ、地形の要素</li>
-<li>時間的な流れ</li>
-</ol>
-<h2>資源の概念</h2>
-<p>ユーザのほとんどの行動は達成されるまでの時間、建設費用（人件費）、建築資材（資材、テクノロジーを含む）
-が発生し、効率的に資源を確保、消費して自軍が有利なユニット、建造物を確保することができる。</p>
-<h2>マップ</h2>
-<p>空間的な広さを持つエリアマップが存在する。
-地形、ユニット、建築物はマップに配置され、マップに設定されるいくつかの影響を受けながらシミュレーションは進行する。
-マップは現時点では開始から、終了まで不変とし、変わる状況は内容ことを想定する。</p>
-<h2>建築物</h2>
-<h1>設定</h1>
-<p><head>要素内にて以下のコードを記述
-require.jsを利用することでjsファイルが読み込まれると同時に所定の初期化処理が実行される。
-どうやらfamo.usではrequire.jsでの読み込み方法を利用している。</head></p>
-<h1>plunkerでの実行</h1>
-<p>starter-kitに付属のboilerplateのコードがほとんどそのまま利用できるが
-Plukerではフォルダ管理ができないようなので、すべてrootパスに切り替える程度ですむ。</p>
             </div>
             <!-- /.entry-content -->
     <hr />
@@ -222,23 +249,18 @@ Plukerではフォルダ管理ができないようなので、すべてrootパ�
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
+                            <a href="../tag/webservice.html">
+                                webservice
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
                             <a href="../tag/github.html">
                                 github
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/famous.html">
-                                famo.us
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="../tag/disqus.html">
-                                Disqus
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="../tag/theme.html">
-                                theme
+                            <a href="../tag/develop.html">
+                                develop
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -247,13 +269,28 @@ Plukerではフォルダ管理ができないようなので、すべてrootパ�
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/editor.html">
-                                editor
+                            <a href="../tag/submodle.html">
+                                submodle
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/esenthel.html">
-                                esenthel
+                            <a href="../tag/famous.html">
+                                famo.us
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/tips.html">
+                                tips
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/disqus.html">
+                                Disqus
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/android.html">
+                                Android
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -267,8 +304,13 @@ Plukerではフォルダ管理ができないようなので、すべてrootパ�
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/webservice.html">
-                                webservice
+                            <a href="../tag/yun-yong.html">
+                                運用
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="../tag/plunker.html">
+                                plunker
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -277,23 +319,23 @@ Plukerではフォルダ管理ができないようなので、すべてrootパ�
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/android.html">
-                                Android
+                            <a href="../tag/esenthel.html">
+                                esenthel
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/tips.html">
-                                tips
+                            <a href="../tag/git.html">
+                                git
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/yun-yong.html">
-                                運用
+                            <a href="../tag/editor.html">
+                                editor
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="../tag/develop.html">
-                                develop
+                            <a href="../tag/theme.html">
+                                theme
                             </a>
                         </li>
                     </ul>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>development blog</title><link href="http://youske.github.io/" rel="alternate"></link><link href="http://youske.github.io/feeds/tips-famous.atom.xml" rel="self"></link><id>http://youske.github.io/</id><updated>2014-05-22T21:30:00+09:00</updated><entry><title>famo.us cdnから読み込んで実行する</title><link href="http://youske.github.io/famouscdn.html" rel="alternate"></link><updated>2014-05-22T21:30:00+09:00</updated><author><name>youske</name></author><id>tag:youske.github.io,2014-05-22:famouscdn.html</id><summary type="html">&lt;h1&gt;概要&lt;/h1&gt;
-&lt;p&gt;famo.us famo.usのcdnを利用したPlunkerで利用できるようにする。&lt;/p&gt;
+&lt;p&gt;famo.us famo.usのcdnを利用したPlunkerで利用できるようにする。
+おそらくplunker以外でも利用はできると思う。&lt;/p&gt;
 &lt;h1&gt;設定&lt;/h1&gt;
 &lt;p&gt;&lt;head&gt;要素内にて以下のコードを記述
 require.jsを利用することでjsファイルが読み込まれると同時に所定の初期化処理が実行される。

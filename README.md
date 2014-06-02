@@ -41,8 +41,17 @@ git push origin source
 
 
 
+
+
 ## デプロイ方法
 デプロイはルートーフォルダから次のようなコマンドを実施する。
+
+記事の投稿は
+make publish
+コマンドを発行、警告、エラーが出ていないかをチェッする。
+./outoutフォルダに出力される。
+
+
 git checkout master
 cp -r outout/* ./
 git add --all

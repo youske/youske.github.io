@@ -1,5 +1,6 @@
 ## Perican output
-output/*
+pelican/
+output/
 *.pid
 *.sh
 
@@ -8,8 +9,10 @@ output/*
 
 ## Temporary File
 .DS_Store
-.*~
+[cC]TAGS
+*.lock
+*.swp
+*.bak
+*.tmp
+*.*~
 *~
-.swp
-.bak
-.tmp

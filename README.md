@@ -4,6 +4,7 @@
 ## virtualenvによる環境の設定
 virtualsenvにてpelicanの環境を作成している。
 
+
 ## virtualenv pericanに切り替え
 cd perican
 . bin/activate

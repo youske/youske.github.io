@@ -1,4 +1,5 @@
 ## Perican output
+node_modules/
 output/
 cache/
 *.pid

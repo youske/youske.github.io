@@ -1,0 +1,17 @@
+{
+  "name": "youske.github.io",
+  "description": "github profile blog",
+  "version": "0.0.1",
+  "homepage": "https://youske.github.io/",
+  "author": {
+    "name": "youske",
+    "email": "youske@gmail.com"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youske/youske.github.io.git"
+  },
+  "dependencies": {
+    "git-changelog": "*"
+  }
+}

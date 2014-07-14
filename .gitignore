@@ -1,8 +1,12 @@
 ## Perican output
-pelican/
 output/
+cache/
 *.pid
-*.sh
+
+#
+pelican/
+pelican-themes/
+pelican-plugins/
 
 ## Python
 *.py[cod]

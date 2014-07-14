@@ -23,7 +23,7 @@ EXTRA_PATH_METADATA = {
   'extra/robots.txt': {'path': 'robots.txt' }
 }
 
-THEME='/home/action/workspace/pelican-themes/pelican-bootstrap3'
+THEME='/home/action/workspace/youske.github.io/pelican-themes/pelican-bootstrap3'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -54,7 +54,7 @@ RELATIVE_URLS = True
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
 
 # plugin settings
-PLUGIN_PATH = '/home/action/workspace/pelican-plugins/'
+PLUGIN_PATH = '/home/action/workspace/youske.github.io/pelican-plugins/'
 PLUGINS = [
 'assets','interlinks',  'googleplus_comments', 'post_stats', 'tipue_search','share_post', 'related_posts', 'sitemap','pelican_vimeo','pelican_youtube','gallery', 'neighbors', 
 #'html_entity', #'read_more_link',#'thumbnailer',#'subcategory',

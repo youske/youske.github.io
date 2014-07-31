@@ -54,7 +54,7 @@ RELATIVE_URLS = True
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
 
 # plugin settings
-PLUGIN_PATH = '/home/action/workspace/youske.github.io/pelican-plugins/'
+PLUGIN_PATHS = ['/home/action/workspace/youske.github.io/pelican-plugins/']
 PLUGINS = [
 'assets','interlinks',  'googleplus_comments', 'post_stats', 'tipue_search','share_post', 'related_posts', 'sitemap','pelican_vimeo','pelican_youtube','gallery', 'neighbors', 
 #'html_entity', #'read_more_link',#'thumbnailer',#'subcategory',

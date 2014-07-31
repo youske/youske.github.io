@@ -12,6 +12,9 @@
     "url": "https://github.com/youske/youske.github.io.git"
   },
   "dependencies": {
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-watch": "*",
     "git-changelog": "*"
   }
 }

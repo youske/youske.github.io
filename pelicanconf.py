@@ -17,6 +17,7 @@ DATE_FORMATS = {
 STATIC_PATHS = [
   'images',
   'extra',
+  'bower_components'
 ]
 
 EXTRA_PATH_METADATA = {

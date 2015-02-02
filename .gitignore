@@ -1,22 +1,19 @@
-## Perican output
+## Directory
 node_modules/
 output/
 cache/
-*.pid
-
-#
 pelican/
 pelican-themes/
 pelican-plugins/
 
-## Python
-*.py[cod]
-
-## Temporary File
+## File
 .DS_Store
+Thumbs.db
 [cC]TAGS
 *.lock
 *.swp
+*.pid
+*.py[cod]
 *.bak
 *.tmp
 *.*~

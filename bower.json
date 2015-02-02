@@ -1,0 +1,14 @@
+{
+  "name": "youske.github.io",
+  "version": "0.0.1",
+  "homepage": "https://github.com/youske/youske.github.io",
+  "description": "ls",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
